@@ -12,6 +12,13 @@ background: linear-gradient(0deg, rgba(153,34,195,1) 0%, rgba(199,139,9,1) 59%);
     font-weight: 600;
     font-style: oblique;
     text-align: center;
+    cursor: pointer;
+
+}
+#tema-da-aula:hover{
+    color:aquamarine;
+    border: dashed 5px royalblue;
+    
 }
 .iniciação{
     color: aliceblue;
@@ -22,4 +29,16 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,107,1) 35%, rg
     font-weight: 600;
     font-style: oblique;
     text-align: center;
+}
+a#link{
+    color: antiquewhite;
+    font-size: 9rem;
+    text-decoration: none;
+    padding: 3rem;
+}
+a#link:visited{
+    color: black;
+    
+}
+a#link:hover{
 }
