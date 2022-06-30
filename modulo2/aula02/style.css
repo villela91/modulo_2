@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+body{
+    background: rgb(1,8,19);
+background: radial-gradient(circle, rgba(1,8,19,1) 0%, rgba(121,9,107,1) 5%, rgba(0,212,255,1) 100%);
+}
 #tema-da-aula{
     color: blueviolet;
     font-size: 9rem;
-    background-color: rgb(165, 142, 42);
+    background: rgb(153,34,195);
+background: linear-gradient(0deg, rgba(153,34,195,1) 0%, rgba(199,139,9,1) 59%);
     font-family: pacifico cursive;
     font-weight: 600;
     font-style: oblique;
+    text-align: center;
 }
 .iniciação{
     color: aliceblue;
@@ -16,4 +21,5 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,107,1) 35%, rg
     font-family: pacifico cursive;
     font-weight: 600;
     font-style: oblique;
+    text-align: center;
 }
