@@ -1,0 +1,25 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+section.container {
+  display: flex;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: column;
+}
+div {
+  display: flex;
+
+  background-color: gray;
+  width: 300px;
+  height: 300px;
+  padding: 3rem;
+  border: 2px solid black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
