@@ -9,7 +9,7 @@ body {
 /* header */
 .header-container {
 height: 100vh;
-width: 300vh;
+width: 180vh;
 background-color:rgb(116, 47, 148) ;
 background-image: url('./Floppy\ disk-rafiki.png');
 background-repeat: no-repeat;
@@ -91,6 +91,7 @@ transform: rotate(0);
     display: none;
 }
 .menu{
+    
     position: absolute;
     top: 28px;
     right: 30px;
