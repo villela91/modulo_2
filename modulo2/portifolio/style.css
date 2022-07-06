@@ -32,19 +32,20 @@ body {
   padding: 0 112px;
   position: relative;
 }
-h1 {
+/* h1 {
   font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 4px;
-}
-h2 {
+} */
+/* h2 {
   text-transform: uppercase;
   letter-spacing: 4px;
-}
+} */
 .social-midia {
   margin-top: 32rem;
   border-radius: 50%;
   display: flex;
+  
 }
 
 .social-midia a {
