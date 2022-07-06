@@ -3,12 +3,12 @@
 body {
   height: 100vh;
   width: 100%;
-  background: rgba(49, 11, 92, 0.849);
-  
+  background: rgba(26, 4, 51, 0.849);
+
   margin: 0;
   padding: 0;
   font-family: "Press Start 2P", cursive;
-  
+
   background-image: url(./Solar\ system-bro.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -19,7 +19,6 @@ body {
 .header-container {
   height: 100vh;
   width: 100%;
-  
 
   color: rgb(156, 136, 22);
   background-image: url("./Floppy\ disk-rafiki\ \(1\).png");
@@ -42,7 +41,6 @@ h1 {
 h2 {
   text-transform: uppercase;
   letter-spacing: 4px;
-  
 }
 .social-midia {
   margin-top: 1rem;
@@ -60,12 +58,11 @@ h2 {
   transition: 0.5s ease-in-out;
 }
 a:hover {
-    
   background-color: white;
 }
 /* menu hamburguer */
 .checkbox-container {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +119,7 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,6 +127,7 @@ a:hover {
   opacity: 0;
   visibility: hidden;
   transition: 400ms ease-in-out 0s;
+  
 }
 .menu-items ul {
   list-style-type: none;
@@ -144,123 +142,184 @@ a:hover {
 }
 
 /* teste de animação */
-#toggle:checked + .checkbox .trace:nth-child(1){
-    transform: rotate(45deg);
-    top: 47px;
+#toggle:checked + .checkbox .trace:nth-child(1) {
+  transform: rotate(45deg);
+  top: 47px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2) {
+  transform: translate(-100px);
+  width: 30px;
+  visibility: hidden;
+  opacity: 0;
+}
+#toggle:checked + .checkbox .trace:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 48px;
+}
+#toggle:checked + .checkbox {
+  background-color: white;
+}
+#toggle:checked ~ .menu {
+  box-shadow: 0px 0px 0px 100vmax white;
+  z-index: 1;
+}
+#toggle:checked ~ .menu-items {
+  visibility: visible;
+  opacity: 1;
+}
+.container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 3rem;
+}
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+.card {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 158, 143);
 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
-#toggle:checked + .checkbox .trace:nth-child(2){
-    transform: translate(-100px);
-    width: 30px;
-    visibility: hidden;
-    opacity: 0;
-}
-#toggle:checked + .checkbox .trace:nth-child(3){
-    transform:rotate(-45deg) ;
-    top: 48px; ;
-}
-#toggle:checked + .checkbox{
-    background-color: white;
+#projeto-1  {
+  background-image: url("./Reading\ glasses-cuate.png");
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 158, 152);
 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
-#toggle:checked ~ .menu{
-    box-shadow: 0px 0px 0px 100vmax white ;
-    z-index: 1;
-}
-#toggle:checked ~ .menu-items{
-    visibility: visible;
-    opacity: 1;
-}
-.container{
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 3rem;
-}
-.card-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
-}
-.card{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    margin: 3rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(93, 44, 158);
-    background-image: url('./Reading\ glasses-cuate.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: grayscale(0.5);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-.card-text{
-    width: 40%;
-    letter-spacing: 1px;
-    color: rgb(109, 109, 109);
-}.card-wrapper{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.card-wrapper::before{
-    content: '';
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    display: block;
-    border: 1px solid white;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
 
+#projeto-2 {
+  background-image: url("./Reading\ glasses-cuate.png");
+
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 158, 152);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
-.card-wrapper h2{
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 0;
-    transition: 0.5s ease-in-out;
+#projeto-3 {
+  background-image: url("./Reading\ glasses-cuate.png");
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 158, 152);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
-.card-wrapper p{
-    font-size: 0;
-    visibility: visible;
-    opacity: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.5s ease-in-out;
+#link1{
+  text-decoration: none;
+  color: rgb(156, 136, 22);
 }
-.card:hover{
-    filter: unset;
+.card-text {
+  width: 40%;
+  letter-spacing: 1px;
+  color: rgb(109, 109, 109);
 }
-.card:hover > .card-wrapper::before{
-    height: 300px;
-    width: 300px;
-    opacity: 1;
+.card-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.card:hover > .card-wrapper p{
-    opacity: 1;
-    visibility: visible;
-    font-size: 14px;
+.card-wrapper::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  border: 1px solid white;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
 }
-.footer{
-    width: 100%;
-    height: 100px;
-    background-color: rgb(113, 60, 212);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
+.card-wrapper h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  transition: 0.5s ease-in-out;
+}
+.card-wrapper p {
+  font-size: 0;
+  visibility: visible;
+  opacity: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+.card:hover {
+  filter: unset;
+}
+.card:hover > .card-wrapper::before {
+  height: 300px;
+  width: 300px;
+  opacity: 1;
+}
+.card:hover > .card-wrapper p {
+  opacity: 1;
+  visibility: visible;
+  font-size: 14px;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(113, 60, 212);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
