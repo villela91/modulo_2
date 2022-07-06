@@ -44,20 +44,57 @@ h2 {
 .social-midia {
   margin-top: 32rem;
   border-radius: 50%;
-
   display: flex;
 }
+
 .social-midia a {
   text-decoration: none;
-  color: rgba(156, 136, 22, 0);
-  padding: 4rem 6rem;
+  color: rgba(156, 136, 22, 0.932);
+  font-size: 0;
+
   border: 1px solid rgba(158, 138, 23, 0);
+  padding: 4rem 6rem;
   min-width: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s ease-in-out;
 }
+/* .social-midi:hover{
+  /* filter: unset; */
+  /* opacity: 1; */
+  /* visibility: visible; */
+  /* font-size: 14px; */
+/* } */ 
+  /* 
+
+.social-midia::before{
+  font-size: 14px;
+
+   border: unset;
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  opacity: 0;
+  transition: 1s ease-in-out;
+  border: 1px solid rgba(158, 138, 23, 0.993);
+
+
+}  */
+
+
+/* .social-midia:hover > .social-midia::before{
+  font-size: 14px;
+
+  height: 300px;
+  width: 300px;
+  opacity: 1;
+  border: 1px solid rgba(158, 138, 23, 0.993);
+
+} */
 
 /* menu hamburguer */
 .checkbox-container {
@@ -67,7 +104,7 @@ h2 {
   align-items: center;
 }
 .checkbox {
-  height: 500px;
+  height: 100px;
   width: 100px;
   position: fixed;
   right: 0;
@@ -109,7 +146,7 @@ h2 {
   height: 4px;
   width: 10px;
   border-radius: 50%;
-  box-shadow: 0px 0px 0px 0px white;
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.068);
   z-index: -1;
   transition: 400ms ease-in-out 0s;
 }
@@ -118,9 +155,9 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   z-index: 2;
   opacity: 0;
@@ -132,12 +169,13 @@ h2 {
   list-style-type: none;
 }
 .menu-items ul li a {
+  
   margin: 10px 0;
   color: rgb(107, 89, 8);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 /* teste de animação */
@@ -156,10 +194,11 @@ h2 {
   top: 48px;
 }
 #toggle:checked + .checkbox {
-  background-color: white;
+  background-color: #c4bcbc;
 }
 #toggle:checked ~ .menu {
-  box-shadow: 0px 0px 0px 200vmax white;
+  position:fixed;
+  box-shadow: 0px 0px 0px 13vmax #c4bcbc;
   z-index: 1;
 }
 #toggle:checked ~ .menu-items {
