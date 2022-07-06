@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: "Press Start 2P", cursive;
 
-  background-image: url(./Solar\ system-bro.png);
+  background-image: url(./Luiz\ Villela\ \(2\).png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -20,8 +20,7 @@ body {
   height: 100vh;
   width: 100%;
 
-  color: rgb(156, 136, 22);
-  background-image: url("./Floppy\ disk-rafiki\ \(1\).png");
+  color: rgb(10, 0, 20);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -43,23 +42,23 @@ h2 {
   letter-spacing: 4px;
 }
 .social-midia {
-  margin-top: 1rem;
+  margin-top: 32rem;
+  border-radius: 50%;
+
   display: flex;
 }
 .social-midia a {
   text-decoration: none;
-  color: rgb(156, 136, 22);
-  padding: 1rem 4rem;
-  border: 1px solid rgb(158, 138, 23);
+  color: rgba(156, 136, 22, 0);
+  padding: 4rem 6rem;
+  border: 1px solid rgba(158, 138, 23, 0);
   min-width: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s ease-in-out;
 }
-a:hover {
-  background-color: white;
-}
+
 /* menu hamburguer */
 .checkbox-container {
   color: rgb(255, 255, 255);
@@ -189,7 +188,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(44, 158, 143);
+  background-color: rgba(44, 158, 143, 0.918);
 
   background-position: center;
   background-size: cover;
