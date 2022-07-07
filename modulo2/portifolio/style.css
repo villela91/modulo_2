@@ -32,17 +32,9 @@ body {
   padding: 0 112px;
   position: relative;
 }
-/* h1 {
-  font-size: 50px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-} */
-/* h2 {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-} */
+
 .social-midia {
-  margin-top: 32rem;
+  margin-top: 35rem;
   border-radius: 50%;
   display: flex;
   
@@ -50,52 +42,27 @@ body {
 
 .social-midia a {
   text-decoration: none;
-  color: rgba(156, 136, 22, 0.932);
-  font-size: 0;
-
-  border: 1px solid rgba(158, 138, 23, 0);
-  padding: 4rem 6rem;
+  color: rgb(156, 136, 22);
+  font-size: 14px;
+  border: 1px solid rgba(158, 138, 23, 0.308);
+  padding: 2rem 7rem;
   min-width: 4rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: left;
   transition: 0.5s ease-in-out;
 }
-/* .social-midi:hover{
-  /* filter: unset; */
-  /* opacity: 1; */
-  /* visibility: visible; */
-  /* font-size: 14px; */
-/* } */ 
-  /* 
-
-.social-midia::before{
-  font-size: 14px;
-
-   border: unset;
-  content: "";
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  display: block;
-  opacity: 0;
-  transition: 1s ease-in-out;
-  border: 1px solid rgba(158, 138, 23, 0.993);
-
-
-}  */
-
-
-/* .social-midia:hover > .social-midia::before{
-  font-size: 14px;
-
-  height: 300px;
-  width: 300px;
-  opacity: 1;
-  border: 1px solid rgba(158, 138, 23, 0.993);
-
-} */
+a:hover {
+     
+  background-color: rgba(255, 255, 255, 0.623);
+}
+#in{
+  padding: 2rem 7;
+font-size: 14px;  
+position: relative;
+justify-content: end;
+align-items: flex-end;
+}
 
 /* menu hamburguer */
 .checkbox-container {
