@@ -42,7 +42,7 @@ body {
 
 .social-midia a {
   text-decoration: none;
-  color: rgb(156, 136, 22);
+  color: rgb(7, 245, 193);
   font-size: 14px;
   border: 1px solid rgba(158, 138, 23, 0.308);
   padding: 2rem 7rem;
@@ -54,7 +54,7 @@ body {
 }
 a:hover {
      
-  background-color: rgba(255, 255, 255, 0.623);
+  background-color: rgba(255, 255, 255, 0.733);
 }
 #in{
   padding: 2rem 7;
@@ -114,7 +114,7 @@ align-items: flex-end;
   height: 4px;
   width: 10px;
   border-radius: 50%;
-  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.068);
+  box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
   z-index: -1;
   transition: 400ms ease-in-out 0s;
 }
@@ -139,7 +139,7 @@ align-items: flex-end;
 .menu-items ul li a {
   
   margin: 10px 0;
-  color: rgb(107, 89, 8);
+  color: rgb(0, 255, 213);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 4px;
