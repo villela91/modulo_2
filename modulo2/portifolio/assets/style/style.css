@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap");
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   height: 100vh;
   width: 100%;
   background: rgba(26, 4, 51, 0.849);
-
-  margin: 0;
-  padding: 0;
   font-family: "Press Start 2P", cursive;
-
-  background-image: url(./Luiz\ Villela\ \(2\).png);
+  overflow-x: hidden;
+  
+  background-image: url(./Luiz\ Villela.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,9 +19,9 @@ body {
 /* header */
 
 .header-container {
-  height: 100vh;
+  
+  height: 100%;
   width: 100%;
-
   color: rgb(10, 0, 20);
   background-repeat: no-repeat;
   background-position: center;
@@ -32,89 +34,54 @@ body {
   padding: 0 112px;
   position: relative;
 }
-
+#eu {
+  text-align: center;
+  position: relative;
+  align-items: center;
+  margin-top: 4rem;
+  border-radius: 100%;
+  justify-content: center;
+  background-color: rgba(119, 6, 248, 0.11);
+}
 .social-midia {
-  margin-top: 35rem;
-  border-radius: 50%;
+  width: 200vh;
+  margin-top: 4rem;
   display: flex;
-  
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-midia a {
   text-decoration: none;
-  color: rgb(7, 245, 193);
+  color: rgb(0, 194, 253);
   font-size: 14px;
-  border: 1px solid rgba(158, 138, 23, 0.308);
+  border: 1px solid rgb(0, 194, 253);
   padding: 2rem 7rem;
   min-width: 4rem;
   display: flex;
-  align-items: flex-end;
-  justify-content: left;
+  align-items: center;
+  justify-content: center;
   transition: 0.5s ease-in-out;
 }
 a:hover {
-     
-  background-color: rgba(255, 255, 255, 0.733);
-}
-#in{
-  padding: 2rem 7;
-font-size: 14px;  
-position: relative;
-justify-content: end;
-align-items: flex-end;
+  background-color: rgb(109, 107, 107);
 }
 
 /* menu hamburguer */
-.checkbox-container {
-  color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.checkbox {
-  height: 100px;
-  width: 100px;
-  position: fixed;
-  right: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 9999;
-  transition: 400ms ease-in-out 0s;
-}
-.checkbox .trace {
-  width: 50px;
-  height: 2px;
-  background-color: rgb(156, 136, 22);
-  position: fixed;
-  border-radius: 4px;
-  transition: 0.5s ease-in-out;
-}
-.checkbox .trace:nth-child(1) {
-  top: 26px;
-  transform: rotate(0);
-}
-.checkbox .trace:nth-child(2) {
-  top: 46px;
-  transform: rotate(0);
-}
-.checkbox .trace:nth-child(3) {
-  top: 66px;
-  transform: rotate(0);
-}
+
 #toggle {
   display: none;
 }
 .menu {
-  position: absolute;
+  position: relative;
   top: 28px;
   right: 30px;
   background-color: transparent;
-  height: 4px;
-  width: 10px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
-  box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.068);
   z-index: -1;
   transition: 400ms ease-in-out 0s;
 }
@@ -131,51 +98,22 @@ align-items: flex-end;
   opacity: 0;
   visibility: hidden;
   transition: 400ms ease-in-out 0s;
-  
 }
 .menu-items ul {
   list-style-type: none;
 }
 .menu-items ul li a {
-  
   margin: 10px 0;
-  color: rgb(0, 255, 213);
+  color: #ffd700;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 20px;
 }
 
-/* teste de animação */
-#toggle:checked + .checkbox .trace:nth-child(1) {
-  transform: rotate(45deg);
-  top: 47px;
-}
-#toggle:checked + .checkbox .trace:nth-child(2) {
-  transform: translate(-100px);
-  width: 30px;
-  visibility: hidden;
-  opacity: 0;
-}
-#toggle:checked + .checkbox .trace:nth-child(3) {
-  transform: rotate(-45deg);
-  top: 48px;
-}
-#toggle:checked + .checkbox {
-  background-color: #c4bcbc;
-}
-#toggle:checked ~ .menu {
-  position:fixed;
-  box-shadow: 0px 0px 0px 13vmax #c4bcbc;
-  z-index: 1;
-}
-#toggle:checked ~ .menu-items {
-  visibility: visible;
-  opacity: 1;
-}
 .container {
   height: auto;
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -205,7 +143,7 @@ align-items: flex-end;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
-#projeto-1  {
+#projeto-1 {
   background-image: url("./Reading\ glasses-cuate.png");
   width: 300px;
   height: 300px;
@@ -264,9 +202,9 @@ align-items: flex-end;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
-#link1{
+#link1 {
   text-decoration: none;
-  color: rgb(156, 136, 22);
+  color: #ffd700;
 }
 .card-text {
   width: 40%;
@@ -321,11 +259,112 @@ align-items: flex-end;
   font-size: 14px;
 }
 .footer {
-  width: 100%;
-  height: 100px;
+  width: 210vh;
+  height: 10vh;
   background-color: rgb(113, 60, 212);
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  .social-midia {
+    width: 100vh;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  .social-midia a {
+    width: 100vh;
+    padding: 2rem 0rem;
+
+    font-size: 10px;
+    min-width: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .checkbox-container {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkbox {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: 400ms ease-in-out 0s;
+  }
+  .checkbox .trace {
+    width: 50px;
+    height: 2px;
+    background-color: #ffd700;
+    position: fixed;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+  }
+  .checkbox .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0);
+  }
+  .checkbox .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
+  }
+  .checkbox .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
+  }
+
+  #toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    top: 47px;
+  }
+  #toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  #toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 48px;
+  }
+  #toggle:checked + .checkbox {
+    background-color: #c4bcbc88;
+  }
+  #toggle:checked ~ .menu {
+    position: relative;
+    box-shadow: 0px 0px 0px 500vmax #c4bcbc88;
+    z-index: 1;
+  }
+  #toggle:checked ~ .menu-items {
+    visibility: visible;
+    opacity: 1;
+  }
+  #projetos {
+    display: none;
+    visibility: hidden;
+  }
+  #card-text {
+    width: 100vh;
+    letter-spacing: 1px;
+    padding: 1rem;
+  }
+  .footer {
+    width: 130vh;
+  }
+}
+@media (max-width: 900px) {
 }
