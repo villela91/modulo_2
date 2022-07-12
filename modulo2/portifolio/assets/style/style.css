@@ -6,7 +6,7 @@
 }
 body {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: rgba(26, 4, 51, 0.849);
   font-family: "Press Start 2P", cursive;
   overflow-x: hidden;
@@ -20,8 +20,8 @@ body {
 
 .header-container {
   
-  height: 100%;
-  width: 100%;
+  height: 48vw;
+  width: 100vw;
   color: rgb(10, 0, 20);
   background-repeat: no-repeat;
   background-position: center;
@@ -31,21 +31,21 @@ body {
   justify-content: center;
   align-items: flex-start;
   box-sizing: border-box;
-  padding: 0 112px;
+  padding: 0 18vw;
   position: relative;
 }
 #eu {
   text-align: center;
   position: relative;
   align-items: center;
-  margin-top: 4rem;
-  border-radius: 100%;
+  margin-top: 4vw;
+  border-radius: 100vw;
   justify-content: center;
   background-color: rgba(119, 6, 248, 0.11);
 }
 .social-midia {
   width: 200vh;
-  margin-top: 4rem;
+  margin-top: 5vw;
   display: flex;
   position: relative;
   align-items: center;
@@ -55,10 +55,10 @@ body {
 .social-midia a {
   text-decoration: none;
   color: rgb(0, 194, 253);
-  font-size: 14px;
+  font-size: 1vw;
   border: 1px solid rgb(0, 194, 253);
-  padding: 2rem 7rem;
-  min-width: 4rem;
+  padding: 2vw 9vw;
+  min-width: 4vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,12 +75,12 @@ a:hover {
 }
 .menu {
   position: relative;
-  top: 28px;
-  right: 30px;
+  top: 28vw;
+  right: 30vw;
   background-color: transparent;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+  height: 0vw;
+  width: 10vw;
+  border-radius: 50vw;
   box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.068);
   z-index: -1;
   transition: 400ms ease-in-out 0s;
@@ -89,8 +89,8 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 50%;
+  width: 100vw;
+  height: 50vw;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -103,12 +103,12 @@ a:hover {
   list-style-type: none;
 }
 .menu-items ul li a {
-  margin: 10px 0;
+  margin: 10vw 0;
   color: #ffd700;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 20px;
+  letter-spacing: 1vw;
+  font-size: 6vw;
 }
 
 .container {
@@ -117,19 +117,19 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 3rem;
+  margin: 3vw;
 }
 .card-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 90%;
+  width: 90vw;
 }
 .card {
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-  margin: 3rem 0 0 0;
+  width: 22vw;
+  height: 22vw;
+  border-radius: 100vw;
+  margin: 3vw 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,10 +145,10 @@ a:hover {
 }
 #projeto-1 {
   background-image: url("./Reading\ glasses-cuate.png");
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-  margin: 3rem 0 0 0;
+  width: 22vw;
+  height: 22vw;
+  border-radius: 100vw;
+  margin: 3vw 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,10 +166,10 @@ a:hover {
 #projeto-2 {
   background-image: url("./Reading\ glasses-cuate.png");
 
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-  margin: 3rem 0 0 0;
+  width: 22vw;
+  height: 22vw;
+  border-radius: 100vw;
+  margin: 3vw 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,9 +185,9 @@ a:hover {
 }
 #projeto-3 {
   background-image: url("./Reading\ glasses-cuate.png");
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
+  width: 22vw;
+  height: 22vw;
+  border-radius: 100vw;
   margin: 3rem 0 0 0;
   display: flex;
   align-items: center;
@@ -207,7 +207,7 @@ a:hover {
   color: #ffd700;
 }
 .card-text {
-  width: 40%;
+  width: 40vw;
   letter-spacing: 1px;
   color: rgb(109, 109, 109);
 }
@@ -222,18 +222,18 @@ a:hover {
 .card-wrapper::before {
   content: "";
   position: absolute;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+  height: 22vw;
+  width: 22vw;
+  border-radius: 50vw;
   display: block;
-  border: 1px solid white;
+  border: 0.1vw solid white;
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
 .card-wrapper h2 {
-  font-size: 40px;
+  font-size: 2vw;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0.6vw;
   margin: 0;
   transition: 0.5s ease-in-out;
 }
@@ -249,14 +249,14 @@ a:hover {
   filter: unset;
 }
 .card:hover > .card-wrapper::before {
-  height: 300px;
-  width: 300px;
+  height: 22vw;
+  width: 22vw;
   opacity: 1;
 }
 .card:hover > .card-wrapper p {
   opacity: 1;
   visibility: visible;
-  font-size: 14px;
+  font-size: 1vw;
 }
 .footer {
   width: 210vh;
@@ -270,33 +270,37 @@ a:hover {
 
 @media (max-width: 900px) {
   body {
+    margin: 0w;
+    width: 100vw;
+    height: 100vw;
     overflow-x: hidden;
   }
+  
   .social-midia {
-    width: 100vh;
-    margin-top: 1rem;
-    margin-left: 2rem;
+    width: 51vh;
+    margin-top: 53vw;
+    margin-left: 2vw;
   }
   .social-midia a {
     width: 100vh;
-    padding: 2rem 0rem;
+    padding: 2vw 0vw;
 
-    font-size: 10px;
-    min-width: 1rem;
+    font-size: 3vw;
+    min-width: 2vw;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .checkbox-container {
-    color: rgb(255, 255, 255);
+    color: rgba(12, 12, 12, 0);
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .checkbox {
-    height: 100px;
-    width: 100px;
+    height: 20vw;
+    width: 20vw;
     position: fixed;
     right: 0;
     top: 0;
@@ -307,23 +311,23 @@ a:hover {
     transition: 400ms ease-in-out 0s;
   }
   .checkbox .trace {
-    width: 50px;
-    height: 2px;
+    width: 10vw;
+    height: 0.9vw;
     background-color: #ffd700;
     position: fixed;
-    border-radius: 4px;
+    border-radius: 4vw;
     transition: 0.5s ease-in-out;
   }
   .checkbox .trace:nth-child(1) {
-    top: 26px;
+    top: 3vw;
     transform: rotate(0);
   }
   .checkbox .trace:nth-child(2) {
-    top: 46px;
+    top: 9vw;
     transform: rotate(0);
   }
   .checkbox .trace:nth-child(3) {
-    top: 66px;
+    top: 15vw;
     transform: rotate(0);
   }
 
@@ -346,7 +350,7 @@ a:hover {
   }
   #toggle:checked ~ .menu {
     position: relative;
-    box-shadow: 0px 0px 0px 500vmax #c4bcbc88;
+    box-shadow: 0px 0px 0px 200vmax #c4bcbc88;
     z-index: 1;
   }
   #toggle:checked ~ .menu-items {
@@ -363,8 +367,32 @@ a:hover {
     padding: 1rem;
   }
   .footer {
-    width: 130vh;
+    width: 59vh;
   }
+  .header-container {
+    width: 90vw;
+    height: 48vw;
 }
-@media (max-width: 900px) {
+}
+@media (max-width: 300px){
+  .footer {
+    width: 43vh;
+  }
+  body {
+    margin: 0w;
+    width: 100vw;
+    height: 100vw;
+    overflow-x: hidden;
+  }
+  .social-midia {
+    width: 41vh;
+    margin-top: 53vw;
+    margin-left: 2vw;
+  }
+
+    .header-container {
+  
+      height: 48vw;
+      width: 95vw;
+  }
 }
