@@ -370,8 +370,7 @@ a:hover {
     width: 59vh;
   }
   .header-container {
-    width: 90vw;
-    height: 48vw;
+    padding:  1vw;
 }
 }
 @media (max-width: 300px){
@@ -379,6 +378,7 @@ a:hover {
     width: 43vh;
   }
   body {
+    padding: 0 100vw;
     margin: 0w;
     width: 100vw;
     height: 100vw;
@@ -393,6 +393,6 @@ a:hover {
     .header-container {
   
       height: 48vw;
-      width: 95vw;
+      width: 90vw;
   }
 }
