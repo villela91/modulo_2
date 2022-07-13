@@ -377,13 +377,7 @@ a:hover {
   .footer {
     width: 43vh;
   }
-  body {
-    padding: 0 100vw;
-    margin: 0w;
-    width: 100vw;
-    height: 100vw;
-    overflow-x: hidden;
-  }
+ 
   .social-midia {
     width: 41vh;
     margin-top: 53vw;
